@@ -4,6 +4,7 @@ This module demonstrates lets you practice INPUT from the CONSOLE.
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Anthony Sparks.
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
+import math
 
 
 def main():
@@ -37,7 +38,6 @@ def double_a_float():
     print('If you had double that you would have', str(money * 2))
 
 
-
 def print_an_integer_many_times():
     """
     What comes in: Nothing.
@@ -64,9 +64,12 @@ def print_an_integer_many_times():
          10
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    pos = int(input('What is your favorite number?: '))
+    for k in range(pos):
+        print(str(pos * 2))
 
 
 def print_an_integer_many_times_on_one_row():
@@ -83,12 +86,18 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # Done: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # ------------------------------------------------------------------
+    b = int(input("What is a random number: "))
+    s = ""
+    for k in range(b):
+        s = s + str(2 * b)
+
+    print(s)
 
 
 def input_it_all():
@@ -123,9 +132,17 @@ def input_it_all():
          Peace & Love.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # ------------------------------------------------------------------
+    a = float(input('Positive Float Point: '))
+    b = int(input("Positive Integer: "))
+    c = input('string: ')
+
+    for k in range(b):
+        print(math.sqrt(a))
+    for k in range(b):
+        print(c)
 
 
 # ----------------------------------------------------------------------
